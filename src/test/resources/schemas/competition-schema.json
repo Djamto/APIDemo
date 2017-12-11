@@ -1,0 +1,198 @@
+{
+ "definitions": {},
+ "$schema": "http://json-schema.org/draft-06/schema#",
+ "$id": "http://example.com/example.json",
+ "type": "object",
+ "properties": {
+  "_links": {
+   "$id": "/properties/_links",
+   "type": "object",
+   "properties": {
+    "self": {
+     "$id": "/properties/_links/properties/self",
+     "type": "object",
+     "properties": {
+      "href": {
+       "$id": "/properties/_links/properties/self/properties/href",
+       "type": "string",
+       "title": "The Href Schema.",
+       "description": "An explanation about the purpose of this instance.",
+       "default": "",
+       "examples": [
+        "http://api.football-data.org/v1/competitions/444"
+       ]
+      }
+     },
+     "required": [
+      "href"
+     ]
+    },
+    "teams": {
+     "$id": "/properties/_links/properties/teams",
+     "type": "object",
+     "properties": {
+      "href": {
+       "$id": "/properties/_links/properties/teams/properties/href",
+       "type": "string",
+       "title": "The Href Schema.",
+       "description": "An explanation about the purpose of this instance.",
+       "default": "",
+       "examples": [
+        "http://api.football-data.org/v1/competitions/444/teams"
+       ]
+      }
+     },
+     "required": [
+      "href"
+     ]
+    },
+    "fixtures": {
+     "$id": "/properties/_links/properties/fixtures",
+     "type": "object",
+     "properties": {
+      "href": {
+       "$id": "/properties/_links/properties/fixtures/properties/href",
+       "type": "string",
+       "title": "The Href Schema.",
+       "description": "An explanation about the purpose of this instance.",
+       "default": "",
+       "examples": [
+        "http://api.football-data.org/v1/competitions/444/fixtures"
+       ]
+      }
+     },
+     "required": [
+      "href"
+     ]
+    },
+    "leagueTable": {
+     "$id": "/properties/_links/properties/leagueTable",
+     "type": "object",
+     "properties": {
+      "href": {
+       "$id": "/properties/_links/properties/leagueTable/properties/href",
+       "type": "string",
+       "title": "The Href Schema.",
+       "description": "An explanation about the purpose of this instance.",
+       "default": "",
+       "examples": [
+        "http://api.football-data.org/v1/competitions/444/leagueTable"
+       ]
+      }
+     },
+     "required": [
+      "href"
+     ]
+    }
+   },
+   "required": [
+    "self",
+    "teams",
+    "fixtures",
+    "leagueTable"
+   ]
+  },
+  "id": {
+   "$id": "/properties/id",
+   "type": "integer",
+   "title": "The Id Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": 0,
+   "examples": [
+    444
+   ]
+  },
+  "caption": {
+   "$id": "/properties/caption",
+   "type": "string",
+   "title": "The Caption Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": "",
+   "examples": [
+    "Campeonato Brasileiro da Série A"
+   ]
+  },
+  "league": {
+   "$id": "/properties/league",
+   "type": "string",
+   "title": "The League Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": "",
+   "examples": [
+    "BSA"
+   ]
+  },
+  "year": {
+   "$id": "/properties/year",
+   "type": "string",
+   "title": "The Year Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": "",
+   "examples": [
+    "2017"
+   ]
+  },
+  "currentMatchday": {
+   "$id": "/properties/currentMatchday",
+   "type": "integer",
+   "title": "The Currentmatchday Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": 0,
+   "examples": [
+    38
+   ]
+  },
+  "numberOfMatchdays": {
+   "$id": "/properties/numberOfMatchdays",
+   "type": "integer",
+   "title": "The Numberofmatchdays Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": 0,
+   "examples": [
+    38
+   ]
+  },
+  "numberOfTeams": {
+   "$id": "/properties/numberOfTeams",
+   "type": "integer",
+   "title": "The Numberofteams Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": 0,
+   "examples": [
+    20
+   ]
+  },
+  "numberOfGames": {
+   "$id": "/properties/numberOfGames",
+   "type": "integer",
+   "title": "The Numberofgames Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": 0,
+   "examples": [
+    380
+   ]
+  },
+  "lastUpdated": {
+   "$id": "/properties/lastUpdated",
+   "type": "string",
+   "title": "The Lastupdated Schema.",
+   "description": "An explanation about the purpose of this instance.",
+   "default": "",
+   "examples": [
+    "2017-12-03T21:30:09Z"
+   ]
+  }
+ },
+ "required": [
+  "_links",
+  "id",
+  "caption",
+  "league",
+  "year",
+  "currentMatchday",
+  "numberOfMatchdays",
+  "numberOfTeams",
+  "numberOfGames",
+  "lastUpdated"
+ ]
+}
