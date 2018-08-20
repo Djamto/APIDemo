@@ -11,10 +11,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = "json:cucumber.json",
         features = {
-                "src/test/resources/features/Competitions.feature"
+                "src/test/resources/features/Competitions.feature",
+                "src/test/resources/features/matchers.feature"
         },
         glue = {"com.demo.api.steps", "com.demo.api.base", "com.demo.api.endpoint"},
-        tags = {"@Competitions"}
+        tags = {"@Matchers"}
 )
 public class Runner {
 }
